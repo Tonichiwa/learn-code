@@ -1,2 +1,2 @@
 # learn-code
-Web sederhana sebagai perjalanan saya mempelajari pemrograman
+M Programming Learning Journey
