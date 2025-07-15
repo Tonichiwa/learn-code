@@ -1,2 +1,2 @@
 # learn-code
-M Programming Learning Journey
+My Programming Learning Journey
