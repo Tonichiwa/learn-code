@@ -3,136 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <title>Halaman Profil</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #f4f4f4;
-      }
-
-      table {
-        width: 100%;
-        border-spacing: 10px;
-      }
-
-      .menu {
-        background-color: #333;
-        color: white;
-        text-align: center;
-      }
-
-      .menu td {
-        padding: 15px;
-      }
-
-      .menu a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-      }
-
-      .menu a:hover {
-        background-color: #555;
-        border-radius: 5px;
-      }
-
-      .judul-gambar {
-        background-color: #ffffff;
-        padding: 40px;
-      }
-
-      .biodata-box {
-        border: 1px solid #ccc;
-        padding: 20px;
-        background-color: #fff;
-        text-align: center;
-      }
-
-      .portofolio {
-        background-color: #ffffff;
-        padding: 30px;
-      }
-
-      .section-title {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fontlibrary.org//face/coolvetica"
+      type="text/css"
+    />
   </head>
   <body>
     <!-- Section 1: Menu -->
-    <table class="menu">
-      <tr>
-        <td><a href="#home">Beranda</a></td>
-        <td><a href="#biodata">Biodata</a></td>
-        <td><a href="#portofolio">Portofolio</a></td>
-        <td><a href="#kontak">Kontak</a></td>
-      </tr>
-    </table>
+    <nav class="menu-grid">
+      <a href="#home">Beranda</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
 
     <!-- Section 2: Judul dan Gambar -->
-    <table class="judul-gambar">
-      <tr>
-        <td style="width: 60%">
-          <h1>Halo, saya Mahasiswa Informatika</h1>
-          <p>
-            Selamat datang di halaman profil saya. Saya sedang belajar
-            pengembangan web dan pemrograman dasar.
-          </p>
-        </td>
-        <td style="text-align: center">
-          <img
-            src="https://via.placeholder.com/200"
-            alt="Foto Profil"
-            style="border-radius: 10px"
-          />
-        </td>
-      </tr>
-    </table>
+    <div class="judul-gambar-grid">
+      <div class="judul">
+        <h1>HALO, AKU MUHAMAD SULTON</h1>
+        <p>SELAMAT DATANG DI WEBSITE PROFILEKU!</p>
+        <button class="button">Pelajari lebih lanjut</button>
+      </div>
+      <div style="text-align: center">
+        <img
+          class="profile-image"
+          src="/images/Sulton1.jpg"
+          alt="Foto Profil"
+          style="border-radius: 10px"
+        />
+      </div>
+    </div>
+    <hr class="section-divider" />
 
     <!-- Section 3: Biodata -->
-    <a name="biodata"></a>
-    <table>
-      <tr>
-        <td colspan="3" class="section-title">Biodata</td>
-      </tr>
-      <tr>
-        <td class="biodata-box">Nama: Tonz</td>
-        <td class="biodata-box">Umur: 21 Tahun</td>
-        <td class="biodata-box">Jenis Kelamin: Laki-laki</td>
-      </tr>
-      <tr>
-        <td class="biodata-box">Asal: Yogyakarta</td>
-        <td class="biodata-box">Kampus: Universitas Contoh</td>
-        <td class="biodata-box">Hobi: Coding & Musik</td>
-      </tr>
-    </table>
-
+    <a name="biodata" class="section-title"></a>
+    <div class="biodata-grid">
+      <div class="section-title" style="grid-column: span 3">BIODATA</div>
+      <div class="biodata-box">Nama: Sulton</div>
+      <div class="biodata-box">Usia: 19 Tahun</div>
+      <div class="biodata-box">Jenis Kelamin: Laki-laki</div>
+      <div class="biodata-box">Asal: Denpasar</div>
+      <div class="biodata-box">Kampus: ISTNUBA</div>
+      <div class="biodata-box">Hoby: Game & Olahraga</div>
+    </div>
+    <hr class="section-divider" />
     <!-- Section 4: Portofolio -->
     <a name="portofolio"></a>
-    <table class="portofolio">
-      <tr>
-        <td class="section-title" colspan="2">Portofolio</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #ccc">
-          <strong>Proyek 1:</strong> Website Portofolio <br />HTML, CSS,
-          JavaScript
-        </td>
-        <td style="padding: 10px; border: 1px solid #ccc">
-          <strong>Proyek 2:</strong> Aplikasi To-Do List <br />ReactJS +
-          Firebase
-        </td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #ccc">
-          <strong>Proyek 3:</strong> Sistem Kasir Sederhana <br />Python +
-          SQLite
-        </td>
-        <td style="padding: 10px; border: 1px solid #ccc">
-          <strong>Proyek 4:</strong> Landing Page Produk <br />Bootstrap
-        </td>
-      </tr>
-    </table>
+    <div class="portofolio-grid">
+      <div class="section-title" style="grid-column: span 2">PORTOFOLIO</div>
+      <div class="portofolio-box">
+        <strong>Project 1</strong> Website Portofolio <br />
+        HTML, CSS, JavaScript
+      </div>
+      <div class="portofolio-box">
+        <strong>Project 2</strong> Daftar Nama & Nilai Siswa <br />
+        C++
+      </div>
+    </div>
   </body>
 </html>
