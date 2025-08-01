@@ -1,7 +1,7 @@
 body {
   font-family: "coolveticaRegular" Arial, sans-serif;
   margin: 0;
-  background-color: #f4ebd3;
+  background-color: white;
 }
 
 .judul {
@@ -34,7 +34,7 @@ body {
   gap: 10px;
   margin-bottom: 20px;
   color: white;
-  background-color: #0077b6;
+  background-color: #41474b;
   height: 45px;
   border-radius: 0 0 20px 20px;
 }
@@ -46,12 +46,12 @@ body {
   color: white;
   border-radius: 5px;
   text-decoration: none;
-  color: #90e0ef;
+  color: #ffffff;
   transition: ease 0.7s;
 }
 
 .menu-grid a:hover {
-  background-color: #00b4d8;
+  background-color: #4c5759;
   border-radius: 5px;
 }
 
@@ -81,9 +81,9 @@ body {
 .biodata-box {
   border: 1px solid #ccc;
   padding: 20px;
-  background-color: #98a1bc;
+  background-color: #ffffff;
   text-align: center;
-  color: #f4ebd3;
+  color: #000;
   border-radius: 12px;
 }
 
@@ -112,4 +112,10 @@ body {
 .section-title {
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+#proPicts {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
